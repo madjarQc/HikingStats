@@ -1,10 +1,9 @@
 package parsers;
 
+import Strings.StringsRessources;
 import java.util.ArrayList;
 import java.util.TreeMap;
-import madjar.hikingstatsDesktop.HikingStats;
 import org.joda.time.DateTime;
-
 
 /**
  *
@@ -12,16 +11,16 @@ import org.joda.time.DateTime;
  */
 public abstract class XmlParserIO {
     
-    public TreeMap readCsvToTreeMap(){
+    public static TreeMap readCsvToTreeMap(){
         
         TreeMap<String, String> map = new TreeMap<>();
          
         return map;
     }
     
-    public String writeTreeMapToCsv(TreeMap<String, String> map){
+    public static String writeTreeMapToCsv(TreeMap<String, String> map){
         
-        String message = HikingStats.MESSAGE_CSV_CREATE;
+        String message = StringsRessources.MESSAGE_CSV_CREATE;
         
         //create a point just before the first point of the param map
         DateTime keyFirstDate = new DateTime(map.firstKey());
@@ -46,7 +45,7 @@ public abstract class XmlParserIO {
         
     }
     
-    public ArrayList readCsvToArrayList(){
+    public static ArrayList readCsvToArrayList(){
         
         ArrayList list = new ArrayList();
         

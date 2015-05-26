@@ -1,6 +1,6 @@
 package parsers;
 
-import control.HikingStatsMain;
+import Strings.StringsRessources;
 import java.io.File;
 import java.io.IOException;
 import java.util.TreeMap;
@@ -33,7 +33,7 @@ public class XmlParser {
         this.builder = factory.newDocumentBuilder();
         this.doc = builder.parse(file);
         doc.getDocumentElement().normalize();
-        this.parsedContent = parseNewContent(HikingStatsMain.KML_PARENT, HikingStatsMain.KML_CHILD_TIME, HikingStatsMain.KML_CHILD_COORDINATE);
+        this.parsedContent = parseNewContent(StringsRessources.KML_PARENT, StringsRessources.KML_CHILD_TIME, StringsRessources.KML_CHILD_COORDINATE);
 
     }
 

@@ -15,10 +15,10 @@
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
             <name>HikingStats</name>
             <source-roots>
-                <root id="src.java.dir" name="Source Main"/>
-                <root id="src.resources.dir" name="Ressources Main"/>
-                <root id="src.java2.dir" name="Source Desktop"/>
-                <root id="src.resources2.dir" name="Ressource Desktop"/>
+                <root id="src.java.dir" name="Main Sources"/>
+                <root id="src.ressources.dir" name="Main Ressources"/>
+                <root id="src.java2.dir" name="Desktop Sources"/>
+                <root id="src.ressources2.dir" name="Desktop Ressources"/>
             </source-roots>
             <test-roots>
                 <root id="test.test.dir" name="Test Main"/>
